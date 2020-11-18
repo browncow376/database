@@ -1,0 +1,27 @@
+
+For your database, propose at least two interesting views that can be built from your relations.  
+These views must involve joining at least two tables together each and must include some kind of 
+aggregation in the view.
+Each view must also be able to be described by a one or two sentence description in plain English.  
+Provide the code for constructing your views along with the English language description of what the view is supposed to be providing. 
+Name the txt file “Views.txt”.
+
+
+
+CREATE VIEW NUM_OF_CHECKOUTS
+AS	SELECT LibraryCard.LibraryCardNbr, COUNT(*)
+	FROM LibraryCard, Checkouts
+	WHERE LibraryCard.LibraryCardNbr = Checkouts.LibraryCardNbr AND LibraryCard.IsActive = TRUE
+	GROUP BY LibraryCard.Nbr
+
+This will create a view for number of checkouts that each active library card has. 
+
+
+
+CREATE VIEW NUM_OF_MOVIES
+AS	SELECT ActorName, MAX(ReleaseDate), Count(*) 
+	FROM Actor, Movie
+	WHERE Actor.MovieApeearance = Movie.MovieName
+	GROUP BY ActorName
+
+This will determine the number of movies a actor has been in and display their most recent movie release date.

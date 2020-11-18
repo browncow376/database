@@ -1,0 +1,1014 @@
+Populate
+
+INSERT INTO Patron (
+	Name,
+	LibraryCardNbr,
+	Email,
+	PhoneNbr,
+	Address
+)
+
+VALUES 
+	(
+		'Johnathan Kacherski',
+ 		19283561,
+		'colekacherski98@gmail.com',
+		'6145807794',
+		'80 E 14th Ave'
+	),
+	(
+		'John Smith',
+		19824841,
+		'jsmith@gmail.com',
+		'6149278273',
+		'1827 Indianola Ave'
+	),
+	(
+		'Eddie Van Halen',
+		29383492,
+		'evh@gmail.com',
+		'2139283938',
+		'115 Lane Ave'
+	),
+	(
+		'Chuck Rhoades',
+		92839484,
+		'crhoades@sdny.gov',
+		'9158293782',
+		'716 High St'
+	),
+	(
+		'Wendy Rhoades',
+		92810293,
+		'wrhoades@axecap.com',
+		'918290382',
+		'716 High St'
+	),
+	(
+		'Cade Kacherski',
+		17293827,
+		'cadekacherski@gmail.com',
+		'6145802313',
+		'311 E 14th Ave'
+	),
+	(
+		'Jacie Riggins',
+		89172937,
+		'jriggins@yahoo.com',
+		'6141927328',
+		'1734 Summit St'
+	),
+	(
+		'James Fischer',
+		81737329,
+		'jfisher@yahoo.com',
+		'6144928293',
+		'1920 E 11th Ave'
+	),
+	(
+		'John Mowat',
+		81929383,
+		'johnnybones@gmail.com',
+		'6149238293',
+		'311 Sesame St'
+	),
+	(
+		'Jack Richey',
+		20383786,
+		'robbenflooby@gmail.com',
+		'6143156223',
+		'91 Chittenden Ave'
+	),
+	(
+		'Eugene Lee',
+		17263837,
+		'ujeanlee@gmail.com',
+		'6142921833',
+		'918 Iuka Ave'
+	),
+	(
+		'Holly Schneider',
+		18373282,
+		'hollyschneider@hotmail.com',
+		'2139283823',
+		'5421 Riverside Dr'
+	),
+	(
+		'Alyssa Forte',
+		56237182,
+		'alyssaforte@yahoo.com',
+		'2139847321',
+		'187 E 13th Ave'
+	),
+	(
+		'Lily McMorrow',
+		92178334,
+		'lilym@gmail.com',
+		'6144739282',
+		'131 E 12th Ave'
+	),
+	(
+		'Marley Mcloughlin',
+		27436728,
+		'marleh@gmail.com',
+		'2132832734',
+		'118 E 14th Ave'
+	),
+	(
+		'Alex Markovich',
+		17298378,
+		'amarko@yahoo.com',
+		'6142837129',
+		'71 W 11th Ave'
+	),
+	(
+		'Ian Markovich',
+		93827212,
+		'imarko@gmail.com',
+		'6148876363',
+		'71 W 11th Ave'
+	),
+	(
+		'John Kacherski',
+		51236253,
+		'jkacherski@yahoo.com',
+		'6145066850',
+		'6860 MacNeil Drive'
+	),
+	(
+		'Jack Kacherski',
+		83384948,
+		'jackkacherski@hotmail.com',
+		'6148823746',
+		'6860 MacNeil Drive'
+	),
+	(
+		'Sammy Hagar',
+		46475623,
+		'sammyhagar@gmail.com',
+		'6145958385',
+		'855 High St'
+	);
+ 
+INSERT INTO LibraryCard (
+	LibraryCardNbr,
+	Name,
+	IsActive
+)
+
+VALUES
+	(
+ 		19283561,
+		'Johnathan Kacherski',
+		True
+	),
+	(
+		19824841,
+		'John Smith',
+		True
+	),
+	(
+		29383492,
+		'Eddie Van Halen',
+		False
+	),
+	(
+		92839484,
+		'Chuck Rhoades',
+		True
+	),
+	(
+		92810293,
+		'Wendy Rhoades',
+		True
+	),
+	(
+		17293827,
+		'Cade Kacherski',
+		True
+	),
+	(
+		89172937,
+		'Jacie Riggins',
+		True
+	),
+	(
+		81737329,
+		'James Fischer',
+		False
+	),
+	(
+		81929383,
+		'John Mowat',
+		True
+	),
+	(
+		20383786,
+		'Jack Richey',
+		True
+	),
+	(
+		17263837,
+		'Eugene Lee',
+		True
+	),
+	(
+		18373282,
+		'Holly Schneider',
+		True
+	),
+	(
+		56237182,
+		'Alyssa Forte',
+		True
+	),
+	(
+		92178334,
+		'Lily McMorrow',
+		True
+	),
+	(
+		
+		27436728,
+		'Marley Mcloughlin',
+		True
+	),
+	(
+		17298378,
+		'Alex Markovich',
+		True
+	),
+	(
+		
+		93827212,
+		'Ian Markovich',
+		True
+	),
+	(
+		51236253,
+		'John Kacherski',
+		True
+	),
+	(
+		83384948,
+		'Jack Kacherski',
+		True
+	),
+	(
+		46475623,
+		'Sammy Hagar',
+		False
+	);
+ 
+
+INSERT INTO Movie (
+	MovieName,
+	Director,
+	Genre,
+	Length,
+	ReleaseDate,
+	ContentRating,
+	NumPhysicalCopies,
+	NumDigitalCopies
+)
+
+VALUES
+	(
+		'Star Wars: Episode I - The Phantom Menace',
+		'George Lucas',
+		'Sci-fi',
+		'02:16:00.0000',
+		'1999-05-19',
+		'PG',
+		41,
+		99
+	),
+	(
+		'Star Wars: Episode II - Attack of the Clones',
+		'George Lucas',
+                           'Sci-fi',
+		'02:22:00.0000',
+		'2002-05-16',
+		'PG',
+		46,
+		91
+	),
+	(
+		'Star Wars: Episode III - Revenge of the Sith',
+		'George Lucas',
+                           'Sci-fi',
+		'02:20:00.0000',
+		'2005-05-19',
+		'PG-13',
+		51,
+		102
+	),
+	(
+		'Star Wars: Episode IV - A New Hope',
+		'George Lucas',
+                           'Sci-fi',
+		'02:01:00.0000',
+		'1977-05-25',
+		'PG',
+		45,
+		56
+	),
+	(
+		'Star Wars: Episode V - The Empire Strikes Back',
+		'Irvin Kershner',
+                           'Sci-fi',
+		'02:04:00.0000',
+		'1980-05-21',
+		'PG',
+		51,
+		60
+	),
+	(
+		'Star Wars: Episode VI - Return of the Jedi',
+		'Richard Marquand',
+                           'Sci-fi',
+		'02:12:00.0000',
+		'1983-05-25',
+		'PG',
+		50,
+		61
+	),
+	(
+		'Star Wars: Episode VII - The Force Awakens',
+		'J.J. Abrams',
+                           'Sci-fi',
+		'02:15:00.0000',
+		'2015-12-18',
+		'PG-13',
+		61,
+		85
+	),
+	(
+		'Star Wars: Episode VIII - The Last Jedi',
+		'Rian Johnson',
+                           'Sci-fi',
+		'02:32:00.0000',
+                          '2017-12-15',
+		'PG-13',
+		52,
+		80
+	),
+	(
+		'Star Wars: Episode IX - The Rise of Skywalker',
+		'J.J. Abrams',
+                           'Sci-fi',
+		'02:22:00.0000',
+		'2019-12-20',
+		'PG-13',
+		62,
+		75
+	),
+	(
+		'The Wolf of Wall Street',
+		'Martin Scorsese',
+                           'Drama',
+		'03:00:00.0000',
+		'2013-12-17',
+		'R',
+		31,
+		45
+	),
+	(
+		'Saving Private Ryan',
+		'Steven Spielberg',
+                           'Epic War',
+		'03:09:00.0000',
+                           '1998-07-24',
+		'R',
+		41,
+		52
+	),
+	(
+		'The Big Short',
+		'Adam McKay',
+                           'Drama',
+		'02:10:00.0000',
+		'2015-12-11',
+		'R',
+		45,
+		50
+	),
+	(
+		'Harry Potter and the Philosophers Stone',
+		'Chris Columbus',
+                           'Fantasy',
+		'02:32:00.0000',
+		'2001-11-16',
+		'PG',
+		41,
+		60
+	),
+	(
+		'Harry Potter and the Chamber of Secrets',
+		'Chris Columbus',
+                           'Fantasy',
+		'03:01:00.0000',
+		'2002-11-15',
+		'PG',
+		45,
+		51
+	),
+	(
+		'Harry Potter and the Prisoner of Azkaban',
+		'Alfonso Cuaron',
+                           'Fantasy',
+		'02:22:00.0000',
+		'2004-05-31',
+		'PG',
+		42,
+		60
+	),
+	(
+		'Harry Potter and the Goblet of Fire',
+		'Mike Newell',
+                           'Fantasy',
+		'02:37:00.0000',
+		'2005-11-18',
+		'PG',
+		39,
+		40
+	),
+	(
+		'Harry Potter and the Order of the Phoenix',
+		'David Yates',
+                           'Fantasy',
+		'02:18:00.0000',
+		'2007-07-11',
+		'PG',
+		44,
+		50
+	),
+	(
+		'Harry Potter and the Half-Blood Prince',
+		'David Yates',
+                           'Fantasy',
+		'02:33:00.0000',
+		'2009-12-15',
+		'PG',
+		41,
+		45
+	),
+	(
+		'Harry Potter and the Deathly Hallows - Part 1',
+		'David Yates',
+                           'Fantasy',
+		'02:26:00.0000',
+		'2010-11-19',
+		'PG-13',
+		50,
+		41
+	),
+	(
+		'Harry Potter and the Deathly Hallows - Part 2',
+		'David Yates',
+                           'Fantasy',
+		'02:10:00.0000',
+		'2011-12-15',
+		'PG-13',
+		49,
+		50
+	);
+ 
+
+INSERT INTO Audiobook (
+	AudiobookName,
+	AuthorName,
+	Genre,
+	PageCount,
+	NumPhysicalCopies,
+	NumDigitalCopies
+)
+
+VALUES
+	(
+		'The Hunger Games',
+		'Suzanne Collins',
+		'Sci-fi',
+		374,
+		41,
+		40
+	),
+	(
+		'Catching Fire',
+		'Suzanne Collins',
+		'Sci-fi',
+		391,
+		35,
+		30
+	),
+	(
+		'Mockingjay',
+		'Suzanne Collins',
+		'Sci-fi',
+		390,
+		36,
+		31
+	),
+             (
+		'The Lightning Thief',
+		'Rick Riordan',
+		'Fantasy',
+		377,
+		68,
+		99
+	),
+              (
+		'The Sea of Monsters',
+		'Rick Riordan',
+		'Fantasy',
+		279,
+		55,
+		50
+	),
+              (
+		'The Titans Curse',
+		'Rick Riordan',
+		'Fantasy',
+		312,
+		60,
+		50
+	),
+              (
+		'The Battle of Labyrinth',
+		'Rick Riordan',
+		'Fantasy',
+		361,
+		52,
+		50
+	),
+             (
+		'The Last Olympian',
+		'Rick Riordan',
+		'Fantasy',
+		381,
+		67,
+		50
+	),
+              (
+		'The Lost Hero',
+		'Rick Riordan',
+		'Fantasy',
+		557,
+		60,
+		50
+	),
+              (
+		'The Son of Neptune',
+		'Rick Riordan',
+		'Fantasy',
+		513,
+		65,
+		50
+	),
+              (
+		'The Mark of Athena',
+		'Rick Riordan',
+		'Fantasy',
+		586,
+		43,
+		50
+	),
+              (
+		'The House of Hades',
+		'Rick Riordan',
+		'Fantasy',
+		597,
+		58,
+		50
+	),
+              (
+		'The Blood of Olympus',
+		'Rick Riordan',
+		'Fantasy',
+		516,
+		73,
+		50
+	),
+              (
+		'Divergent',
+		'Veronica Roth',
+		'Sci-fi',
+		487,
+		59,
+		50
+	),
+              (
+		'Insurgent',
+		'Veronica Roth',
+		'Sci-fi',
+		525,
+		37,
+		50
+	),
+              (
+		'Allegiant',
+		'Veronica Roth',
+		'Sci-fi',
+		526,
+		57,
+		50
+	),
+              (
+		'Twilight',
+		'Stephanie Meyer',
+		'Young Adult',
+		498,
+		84,
+		50
+	),
+              (
+		'New Moon',
+		'Stephanie Meyer',
+		'Young Adult',
+		563,
+		78,
+		50
+	),
+               (
+		'Eclipse',
+		'Stephanie Meyer',
+		'Young Adult',
+		629,
+		81,
+		50
+	),
+              (
+		'Breaking Dawn',
+		'Stephanie Meyer',
+		'Young Adult',
+		756,
+		87,
+		50
+	);
+ 
+
+INSERT INTO VideoGame (
+	VideoGameName,
+	Genre,
+	ReleaseDate,
+	ContentRating,
+	Console,
+	NumCopies
+)
+
+VALUES
+	(
+		'Call of Duty 4: Modern Warfare',
+		'Shooter',
+		'2007-11-05',
+		'M',
+		'Xbox 360',
+		31
+	),
+	(
+		'Call of Duty: World at War',
+		'Shooter',
+		'2008-11-11',
+		'M',
+		'Xbox 360',
+		35
+	),
+	(
+		'Call of Duty: Modern Warfare 2',
+		'Shooter',
+		'2009-11-10',
+		'M',
+		'Xbox 360',
+		36
+	),
+	(
+		'Grand Theft Auto V',
+		'Action-Adventure',
+		'2013-09-17',
+		'M',
+		'PlayStation 4',
+		31
+	),
+              (
+		'Grand Theft Auto IV',
+		'Action-Adventure',
+		'2008-04-29',
+		'M',
+		'PlayStation 3',
+		38
+	),
+              (
+		'NBA 2K16',
+		'Sports',
+		'2015-09-29',
+		'PG',
+		'PlayStation 4',
+		39
+	),
+              (
+		'NBA 2K17',
+		'Sports',
+		'2016-09-20',
+		'PG',
+		'PlayStation 4',
+		41
+	),
+              (
+		'NBA 2K18',
+		'Sports',
+		'2017-09-17',
+		'PG',
+		'PlayStation 4',
+		47
+	),
+              (
+		'NBA 2K19',
+		'Sports',
+		'2018-09-11',
+		'PG',
+		'PlayStation 4',
+		52
+	),
+               (
+		'NBA 2K20',
+		'Sports',
+		'2019-09-6',
+		'PG',
+		'PlayStation 4',
+		64
+	),
+              (
+		'Far Cry 3',
+		'Shooter',
+		'2012-11-29',
+		'PG-13',
+		'PC',
+		52
+	),
+              (
+		'Far Cry 4',
+		'Shooter',
+		'2014-11-18',
+		'PG-13',
+		'PC',
+		57
+	),
+              (
+		'Far Cry 5',
+		'Shooter',
+		'2018-03-27',
+		'PG-13',
+		'PC',
+		61
+	),
+              (
+		'Far Cry Primal',
+		'Shooter',
+		'2016-03-01',
+		'PG-13',
+		'PC',
+		33
+	),
+              (
+		'Assassins Creed',
+		'Stealth',
+		'2007-11-13',
+		'PG-13',
+		'Playstation 3',
+		45
+	),
+              (
+		'Assassins Creed II',
+		'Stealth',
+		'2009-11-17',
+		'PG-13',
+		'Playstation 3',
+		47
+	),
+              (
+		'Assassins Creed: Brotherhood',
+		'Stealth',
+		'2010-11-16',
+		'PG-13',
+		'Playstation 3',
+		32
+	),
+              (
+		'Assassins Creed: Revelations',
+		'Stealth',
+		'2011-11-15',
+		'PG-13',
+		'Playstation 3',
+		37
+	),
+               (
+		'Assassins Creed III',
+		'Stealth',
+		'2012-10-30',
+		'PG-13',
+		'Playstation 3',
+		31
+	),
+              (
+		'Assassins Creed IV: Black Flag',
+		'Stealth',
+		'2013-10-29',
+		'PG-13',
+		'Playstation 4',
+		42
+	),
+               (
+		'Assassins Creed Origins',
+		'Stealth',
+		'2017-10-27',
+		'PG-13',
+		'Playstation 4',
+		51
+	);
+
+
+INSERT INTO Employees (
+	EmployeeID,
+	EmployeeName,
+	Salary,
+	NumCardsRegistered,
+	Role
+)
+
+VALUES
+	(
+		450539209,
+		'Charlie Sheen',
+		51000,
+		18,
+		'Librarian'
+	),
+	(
+		761657335,
+		'Fred Flintstone',
+		51000,
+		19,
+		'Librarian'
+	),
+             (
+		117546485,
+		'Barry Allen',
+		51000,
+		24,
+		'Librarian'
+	),
+              (
+		651300530,
+		'Grace Park',
+		45000,
+		11,
+		'Librarian'
+	),
+              (
+		784488852,
+		'Beth Taylor',
+		42000,
+		7,
+		'Librarian'
+	),
+             (
+		284373205,
+		'Lily Hunter',
+		57000,
+		31,
+		'Librarian'
+	),
+             (
+		339010989,
+		'Ben Li',
+		60000,
+		48,
+		'Librarian'
+	),
+              (
+		188858302,
+		'Justin Pomen',
+		52000,
+		23,
+		'Librarian'
+	),
+              (
+		258393813,
+		'Rebecca lopez',
+		70000,
+		71,
+		'Librarian'
+	),
+              (
+		836505221,
+		'Julia Tate',
+		58000,
+		49,
+		'Librarian'
+	),
+              (
+		215192502,
+		'Bruce Wayne',
+		68000,
+		62,
+		'Librarian'
+	),
+              (
+		604714602,
+		'Clark Kent',
+		78000,
+		92,
+		'Librarian'
+	),
+              (
+		853411139,
+		'John Brown',
+		43000,
+		35,
+		'Librarian'
+	),
+              (
+		959814871,
+		'Peter Griffin',
+		52000,
+		31,
+		'Librarian'
+	),
+              (
+		809611151,
+		'Lois Lane',
+		38000,
+		17,
+		'Librarian'
+	),
+               (
+		556968539,
+		'Stewie Griffin',
+		28000,
+		13,
+		'Librarian'
+	),
+              (
+		961353960,
+		'Bob Ross',
+		74000,
+		87,
+		'Librarian'
+	),
+             (
+		163681629,
+		'Stan Lee',
+		52000,
+		25,
+		'Librarian'
+	),
+              (
+		557920549,
+		'Josh Dean',
+		25000,
+		15,
+		'Librarian'
+	),
+              (
+		640763177,
+		'Rose Liu',
+		60000,
+		41,
+		'Librarian'
+	);
+
+INSERT INTO Checkouts (
+	EntityName,
+	EntityType,
+	LibraryCardNbr,
+	ReturnDate,
+	CheckoutDate,
+	DueDate
+)
+
+VALUES
+	(
+			
+		'Star Wars: Episode I - The Phantom Menace',
+		'MOV', -- Movie Entity
+		19283561,
+		NULL,
+		'2020-10-28',
+		'2020-11-04'
+	),
+	(
+		'The Hunger Games',
+		'AUD', -- Audiobook Entity
+		19824841,
+		NULL,
+		'2020-10-28',
+		'2020-11-11'
+	),
+	(
+		'Call of Duty: Modern Warfare',
+		'GAM', -- Video Game Entity
+		18373282,
+		NULL,
+		'2020-10-28',
+		'2020-11-11'
+	);
