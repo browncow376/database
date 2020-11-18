@@ -1,0 +1,77 @@
+--a
+SELECT Patron.name, Movie.length
+FROM Patron, Movie, LibraryCard, Checkouts
+WHERE Patron.name = LibraryCard.library_card_nbr AND
+	LibraryCard.library_card_nbr = Checkouts.library_card_nbr AND
+	Checkouts.entity_name = Movie.movie_name
+
+--b
+SELECT name, email
+FROM Patron
+WHERE
+	(SELECT COUNT(Albums.album_name)
+	FROM Albums
+	WHERE Albums.album_name = Checkouts.entity_name AND Checkouts.entity_name = LibraryCard.Library_card_nbr)
+	>
+	(SELECT AVG(Albums.album_name)
+	FROM Albums
+	WHERE Albums.album_name = Checkouts.entity_name AND Checkouts.entity_name = LibraryCard.Library_card_nbr)
+
+--c
+SELECT Movie.movie_name, COUNT(Movie.Name)
+FROM Movie, Checkouts
+WHERE Movie.Name = Checkouts.entity_name
+ORDER BY COUNT(Checkouts.entity_name) DESC
+
+--d
+SELECT Album.album_name COUNT(Album.album_name)
+FROM Album, Checkouts
+WHERE Album.album_name = Checkouts.entity_name
+ORDER BY COUNT(Checkouts.entity_name) DESC
+
+--e
+SELECT Actor.actor_name COUNT(Actor.actor_name)
+FROM Actor, Checkouts
+WHERE Actor.actor_name = Checkouts.entity_name
+ORDER BY COUNT(Checkouts.entity_name) 
+
+--f
+SELECT Album.artist_name
+FROM Album
+WHERE 
+    (SELECT Album.artist_name, album.album_name, track.length
+    FROM Patron, Album,Track, LibraryCard, Checkouts
+    WHERE Patron.name = LibraryCard.library_card_nbr AND
+	LibraryCard.library_card_nbr = Checkouts.library_card_nbr AND
+	Checkouts.entity_name = Album.album_name)
+	>
+	(SELECT Album.album_name, COUNT(album.Name)
+    FROM album, Checkouts
+    WHERE album.Name = Checkouts.entity_name
+    ORDER BY COUNT(Checkouts.entity_name) DESC))
+	
+
+--g
+SELECT name, email,phone,address, Library_card_number
+FROM Patron
+WHERE
+    (SELECT Actor.actor_name COUNT(Actor.actor_name)
+    FROM Actor, Checkouts
+    WHERE Actor.actor_name = Checkouts.entity_name
+    ORDER BY COUNT(Checkouts.entity_name))
+	
+
+--h
+SELECT artist.artist_name
+FROM Artist
+WHERE
+    (SELECT name
+    FROM Patron
+    WHERE
+	    (SELECT COUNT(Albums.album_name)
+	    FROM Albums
+	    WHERE Albums.album_name = Checkouts.entity_name AND Checkouts.entity_name = LibraryCard.Library_card_nbr)
+	    >
+	    (SELECT AVG(Albums.album_name)
+	    FROM Albums
+	    WHERE Albums.album_name = Checkouts.entity_name AND Checkouts.entity_name = LibraryCard.Library_card_nbr))
